@@ -183,7 +183,7 @@ void ProfileSetupDialog::setupProfile(const QString &profileName) {
 
     auto token = m_accountToSetup->accessToken();
 
-    auto url = QString("https://api.minecraftservices.com/minecraft/profile");
+    auto url = QString("https://account.ely.by/api/mojang/services/minecraft/profile");
     QNetworkRequest request = QNetworkRequest(url);
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
     request.setRawHeader("Accept", "application/json");
